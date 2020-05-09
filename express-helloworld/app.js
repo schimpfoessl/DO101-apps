@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/env', function (req, res) {
-  res.send(JSON.stringify(process.env)));
+  res.send(JSON.stringify(process.env));
 });
 
 app.get('/foo', function (req, res) {
