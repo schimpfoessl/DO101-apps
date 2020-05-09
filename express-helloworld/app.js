@@ -6,8 +6,8 @@ app.get('/', function (req, res) {
   res.send('Hello World!\n');
 });
 
-app.get('/mars', function (req, res) {
-  res.send('Hello Mars!\n');
+app.get('/env', function (req, res) {
+  res.send(JSON.stringify(process.env)));
 });
 
 app.get('/foo', function (req, res) {
