@@ -1,4 +1,5 @@
 var express = require('express');
+const name=process.env.name;
 app = express();
 
 app.get('/', function (req, res) {
@@ -10,7 +11,7 @@ app.get('/mars', function (req, res) {
 });
 
 app.get('/foo', function (req, res) {
-  res.send('Hello Foo! v3\n');
+  res.send('Hello Foo! '+name+'\n');
 });
 
 app.listen(8080, function () {
